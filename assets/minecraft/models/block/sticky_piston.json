@@ -1,0 +1,33 @@
+{
+	"parent": "block/piston_extended",
+	"textures": {
+		"particle": "block/piston_arm",
+		"bottom": "block/piston_bottom",
+		"side": "block/sticky_piston_side",
+		"platform": "block/stk_piston_arm"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 4],
+			"to": [16, 16, 16],
+			"faces": {
+				"east": {"uv": [0, 4, 16, 16], "rotation": 90, "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#bottom"},
+				"west": {"uv": [0, 4, 16, 16], "rotation": 270, "texture": "#side"},
+				"up": {"uv": [0, 4, 16, 16], "texture": "#side"},
+				"down": {"uv": [0, 4, 16, 16], "rotation": 180, "texture": "#side"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 4],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#platform"},
+				"east": {"uv": [0, 0, 16, 4], "rotation": 90, "texture": "#side"},
+				"west": {"uv": [0, 0, 16, 4], "rotation": 270, "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 4], "texture": "#side"},
+				"down": {"uv": [0, 0, 16, 4], "rotation": 180, "texture": "#side"}
+			}
+		}
+	]
+}
